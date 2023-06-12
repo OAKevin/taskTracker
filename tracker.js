@@ -91,7 +91,7 @@ window.addEventListener('load', () => {
   
       const deleteButton = document.createElement("button");
       deleteButton.classList.add("delete");
-      deleteButton.innerHTML = "Delete";
+      deleteButton.innerHTML = "Finished";
   
       taskActions.appendChild(editButton);
       taskActions.appendChild(deleteButton);
