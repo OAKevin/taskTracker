@@ -1,12 +1,11 @@
 :root{
-    --dark:#374151;
+    --background:#2147209e;
     --darker:#1F2937;
-    --darkest:#111827;
-    --grey:grey;
+    --darkest:#243327;
+    --grey:rgb(214, 210, 210);
     --light:#eee;
-    --blue:rgb(37, 191, 243);
+    --green:rgb(37, 243, 75);
     --white:white;
-
 }
 
 *{
@@ -20,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--dark);
+    background-color: var(--background);
     color: var(--white);
 }
 header{
@@ -62,7 +61,7 @@ input, button{
     color:var(--blue);
     font-size:1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--blue), var(--white));
+    background-image: linear-gradient(to right, var(--green), var(--white));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -113,7 +112,7 @@ main{
     transition: 0.4s;
 }
  .task .content .text :not(:read-only){
-    color: var(--blue)
+    color: var(--green)
 }
  .task .actions {
     display: flex;
@@ -134,10 +133,35 @@ main{
     opacity: 0.6;
 }
 .task .actions .edit {
-    background-image: linear-gradient(to right, var(--blue), var(--white));
+    background-image: linear-gradient(to right, var(--green), var(--white));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .task-list .actions .delete {
     color: crimson;
+}
+#task-date {
+    flex: 0 0 150px;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+#task-date input[type="date"] {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--light);
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+#task-date input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }

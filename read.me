@@ -1,0 +1,15 @@
+This application consists of 2 sides. the client side which is the tracker.js
+and the server side which is the server.js. They work hand in hand to update the front
+end for the user in order to show the tasks that are being added by the user.
+The purpose of the application is to write tasks, update them, and delete them.
+Each of these functions have to work in hand with the server portion in order to use
+node to update the tasks.txt file. If the user wants to post a task then it will be updated
+to the tasks.txt file, If the tasks need to be edited then the server side should go back to the tasks.txt
+and change the information in order to update the necessary requirements using the tasks ID.
+
+Issues: Being able to properly add and edit the tasks using node. I was able to post a few 
+additions but after making changes to edit the tasks.txt I have broken my code so now it doesnt even post the additions.
+I was able to add a date field to the js but wasnt able to edit the text using js.
+I had alot of issues using the server.js to update delete the items using ID which was breaking my app.
+I had alot of issues implementing proper directories, using node.js it gives me errors when the index.html and 
+my tracker.js was in the same root direcory as the server.js/tasks.txt so I had to add them in a public folder directory.
